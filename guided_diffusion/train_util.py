@@ -271,9 +271,10 @@ def parse_resume_step_from_filename(filename):
 
 
 def get_blob_logdir():
+    return './experiments'
     # You can change this to be a separate path to save checkpoints to
     # a blobstore or some external drive.
-    return logger.get_dir()
+    # return logger.get_dir()
 
 
 def find_resume_checkpoint():
